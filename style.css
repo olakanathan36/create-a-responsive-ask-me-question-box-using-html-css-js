@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center-div{
+    text-align: center;
+}
+.box{
+    width: 300px;
+    margin: 20% auto;
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #BEC6A0;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    width: 250px;
+    height: 30px;
+}
+button{
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    background-color: #DFD3C3;
+    
+
+}
+#icon{
+    font-size: 50px;
+}
+h2{
+    
+    font-size:xx-large;
+    color: #708871;
+}
+i{
+    color: #536493;
+}

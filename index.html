@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Box</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                   
+                        <div class="box">
+                            <i class="fa-solid fa-user" id="icon"></i>
+                            <h2>Ask me a Question</h2><br>
+                            <input name="" id="text-area" placeholder="     Ask me something........"></input>
+                            <br><br>
+                            <div class="btn">
+                                
+                                <button onclick="submit()">Accept</button>
+                                <button>Decline</button>
+                            </div>
+                            <br>
+                            <p id="feedback"></p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var arr=[
+            'What is your name?',
+            "What is your age?",
+            "What is your gender?",
+            "What is your address?",
+            "What is your phone number?",
+            "how old are u"
+        ];
+        function submit(){
+            var text_area = document.getElementById('text-area').value;
+            var feedback = document.getElementById('feedback');
+            var accepted = arr.includes(text_area);
+            if (accepted) {
+                alert("You are accepted");
+                feedback.textContent = "Accepted!";
+                feedback.style.color = "green";
+            } else {
+                alert("You are declined");
+                feedback.textContent = "Declined!";
+                feedback.style.color = "red";
+                document.getElementById("text-area").value=''
+
+            }
+        }
+    </script>
+</body>
+</html>
